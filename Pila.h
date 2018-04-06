@@ -15,7 +15,7 @@ class Pila{
     Pila(Apuntador*);
 
     void push(Apuntador*);
-    void pop();
+    string pop();
     void top();
     void isEmpty();
     

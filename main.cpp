@@ -18,9 +18,9 @@ int main(){
     cin >> cadena;
     agregarAPila( cadena);
     // como se esta empezado el anterior es null
-    
-    
 
+    cout<< "El ultimo elemento es" << endl;    
+    cout<< "->  " << pila->pop() << endl;
 
 
 

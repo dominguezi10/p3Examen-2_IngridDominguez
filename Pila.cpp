@@ -18,8 +18,8 @@ void Pila:: push(Apuntador* apuntadorB){
 
 }
 
-void Pila:: pop(){
-
+string Pila:: pop(){
+    return apuntador->getSimbolo();
 }
 
 void Pila:: top(){
