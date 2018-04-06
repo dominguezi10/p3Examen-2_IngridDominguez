@@ -12,9 +12,9 @@ class Pila{
         
     public:
     Pila();
-    Pila(Apuntador*);
+    //Pila(Apuntador*);
 
-    void push(Apuntador*);
+    void push(string);
     string pop();
     void top();
     void isEmpty();

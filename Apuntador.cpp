@@ -12,6 +12,10 @@ Apuntador::Apuntador(Apuntador* apuntadorAnterior, string simbolo){
 Apuntador::~Apuntador(){
 }
 
+Apuntador* Apuntador:: getAnterior(){
+    return anterior;
+}
+
 void Apuntador:: setApuntador(Apuntador* apuntadorAnterior){
     this->anterior = apuntadorAnterior;
 }

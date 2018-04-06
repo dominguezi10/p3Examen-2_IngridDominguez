@@ -8,7 +8,7 @@ using namespace std;
 //Prototipos
 //int menu();
 void agregarAPila(string);
-Pila* pila;
+Pila* pila = new Pila();
 
 int main(){
     
@@ -16,19 +16,21 @@ int main(){
     cout<< "Bienvenido! Al examen Final (Yeaaaaaah!)" << endl;
     cout<< "Ingrese su cadena de operaciones: " << endl;
     cin >> cadena;
-    agregarAPila( cadena);
+    pila->push(cadena);
     // como se esta empezado el anterior es null
 
     cout<< "El ultimo elemento es" << endl;    
     cout<< "->  " << pila->pop() << endl;
 
+    cout<< "El ultimo2 elemento es" << endl;    
+    cout<< "->  " << pila->pop() << endl;
 
 
 
 }// fn del main
 
 void agregarAPila(string cadena){
-    Apuntador* apuntadorAnterior = NULL;
+    /*Apuntador* apuntadorAnterior = NULL;
     for(int i=0; i<cadena.size(); i++ ){
         //cout<< cadena.at(i) << endl;
        
@@ -51,7 +53,7 @@ void agregarAPila(string cadena){
         apuntadorAnterior = apuntador;
         //cout << apuntadorAnterior->getSimbolo() <<" ";
     }
-    cout<< endl;
+    cout<< endl;*/
 
 }
 

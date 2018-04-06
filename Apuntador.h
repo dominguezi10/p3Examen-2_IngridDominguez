@@ -16,6 +16,8 @@ class Apuntador{
     string getSimbolo();
     void setApuntador(Apuntador*);
 
+    Apuntador* getAnterior();
+
     //Apuntador(string);
     Apuntador(Apuntador*, string);
     ~Apuntador();
