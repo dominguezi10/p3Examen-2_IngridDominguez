@@ -22,9 +22,11 @@ int main(){
     cout<< "El ultimo elemento es" << endl;    
     cout<< "->  " << pila->pop() << endl;
 
-    cout<< "El ultimo2 elemento es" << endl;    
-    cout<< "->  " << pila->pop() << endl;
+    /*cout<< "Este elemento fue eliminado!" << endl;    
+    cout<< "->  " << pila->pop() << endl;*/
 
+    //cout<< "El primer elemento es" << endl;    
+    pila->top();
 
 
 }// fn del main

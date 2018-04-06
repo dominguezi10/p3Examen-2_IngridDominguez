@@ -62,6 +62,28 @@ string Pila:: pop(){
 }
 
 void Pila:: top(){
+    Apuntador* nuevo = NULL;
+    nuevo = apuntador->getAnterior();
+
+    int condicion = 0;
+    while(condicion == 0){
+        Apuntador* actual = NULL;
+        actual = nuevo;
+        
+        Apuntador* otro = NULL;
+        nuevo = otro;
+        nuevo = actual->getAnterior();
+        
+
+        if(nuevo == NULL){
+            nuevo = actual;
+            //cout<< "elemento es: "<< nuevo->getSimbolo() << endl;
+            condicion =2;
+        }
+    }
+
+    cout<< "Primer elemento es: "<< nuevo->getSimbolo() << endl;
+    
 }
 
 void Pila:: isEmpty(){
