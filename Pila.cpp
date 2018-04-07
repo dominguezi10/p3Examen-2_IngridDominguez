@@ -46,7 +46,7 @@ void Pila:: push(string cadena){
 
 }
 
-string Pila:: pop(){
+Apuntador* Pila:: pop(){
     Apuntador* actual = NULL;
     actual = apuntador;
 
@@ -57,13 +57,23 @@ string Pila:: pop(){
     apuntador = NULL;
     apuntador = nuevo;
 
-    return actual->getSimbolo();
+    return actual;
 
 }
 
-void Pila:: top(){
+Apuntador* Pila:: top(){
     Apuntador* nuevo = NULL;
-    nuevo = apuntador->getAnterior();
+    
+    if(apuntador != NULL){
+        nuevo = apuntador->getAnterior();  
+        if(nuevo == NULL){
+            nuevo = apuntador;
+            return apuntador;
+        }
+    }else{
+        nuevo == NULL;
+        return nuevo;
+    }
 
     int condicion = 0;
     while(condicion == 0){
@@ -82,12 +92,16 @@ void Pila:: top(){
         }
     }
 
-    cout<< "Primer elemento es: "<< nuevo->getSimbolo() << endl;
+    return nuevo;
     
 }
 
-void Pila:: isEmpty(){
-
+bool Pila:: isEmpty(){
+    if(apuntador == NULL){
+        return true;
+    }else{
+        return false;
+    }
 }
 
 

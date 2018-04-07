@@ -15,9 +15,9 @@ class Pila{
     //Pila(Apuntador*);
 
     void push(string);
-    string pop();
-    void top();
-    void isEmpty();
+    Apuntador* pop();
+    Apuntador* top();
+    bool isEmpty();
     
     
     ~Pila();
