@@ -59,6 +59,7 @@ int main(){
         cout << endl << endl;
     }// fin del while
 
+    cout<< "No sos Playa XD" << endl;
 }// fn del main
 
 
